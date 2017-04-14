@@ -48,14 +48,14 @@ class ServerSolution implements AccountServer {
 	private boolean newAccountFactory(String type, String name, float balance)
 		throws IllegalArgumentException {
 		
-		if (accountMap.get(name) != null) return false;
+		if (accountMap.get(name.toLowerCase()) != null) return false;
 		
 		Account acc;
 		if ("Checking".equals(type)) {
-			acc = new Checking(name, balance);
+			acc = new Checking(name.toLowerCase(), balance);
 
 		} else if ("Savings".equals(type)) {
-			acc = new Savings(name, balance);
+			acc = new Savings(name.toLowerCase(), balance);
 
 		} else {
 			throw new IllegalArgumentException("Bad account type:" + type);
