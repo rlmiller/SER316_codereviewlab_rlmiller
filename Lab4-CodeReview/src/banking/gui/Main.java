@@ -23,7 +23,7 @@ final class Main {
 
 		if (args.length != 1) {
 			System.out.println("Usage: java FormMain <property file>");
-			System.exit(1);
+			System.exit(1);// this is a test for pushing to github
 		}
 
 		String propertyFile = args[0];

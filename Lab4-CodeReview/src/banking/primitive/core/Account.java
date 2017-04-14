@@ -1,7 +1,18 @@
+/*
+  File:	Account.Java
+  Author: Some coder person
+  Date:	a date before 04.13.17
+  
+  Description: This is the account Class that is inherited by Checking.java and Savings.java
+*/
+
+
+
+
 package banking.primitive.core;
 
 public abstract class Account implements java.io.Serializable {
-    private static final long serialVersionUID = 1L;
+    private static final long SERIALVERSIONUID = 1L;
 
     protected enum State {
         OPEN, CLOSED, OVERDRAWN
